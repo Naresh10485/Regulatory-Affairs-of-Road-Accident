@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
 ```
 
 ## Notebook_Setup
@@ -115,7 +116,7 @@ df['outcome_of_incident'].unique()
 2. Total Injured and
 3. Persons Killed.
 
-## Analysis : Total number of Accidents
+## Analysis:Total_number_of_Accidents
 * To analysis the total number of accidents, we extract and assign them into a new variable and further proceed:
 ```python
 total_accidents_mask = df[df['outcome_of_incident']=="Total number of Accidents"]
@@ -302,14 +303,14 @@ for label in injured_subcat_labels:
 
 - Common reason for accidents in `Kochi` were : `Police Controlled` traffic.
 
-## Analysis : Total Injured and 'Total Killed'
+## Analysis:Total_Injured_and_Total_Killed
 * Based on Previous method for `Total Number of Accidents`, we continued our study to Total Injured and Total Killed across all cities.
 * The Analysis and Code can be checked in my **Jupyter Notebook** at 
 ![Jupyter Notebook](/Road%20Accidents%20Project.ipynb)
 
 * Here is Insights from both Cause:
 
-## Insights from Total Injured:
+## Insights_from_Total_Injured:
 
 - `Chennai` tops the list again in `Total Injured`, followed by `Delhi`, `Jabalpur`, `Bangaluru`, and `Indore`.
 
